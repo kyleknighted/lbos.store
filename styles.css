@@ -256,29 +256,32 @@ footer {
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   header .container {
     flex-direction: column;
     text-align: center;
-  }
-
-  nav ul {
-    margin-top: 20px;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  nav ul li {
-    margin: 5px 10px;
   }
 
   #hero h2 {
     font-size: 2.2rem;
   }
 
-  .product-grid {
-    grid-template-columns: 1fr;
+  .product-category-header h2 {
+    position: relative;
   }
+
+  .product-category-header h3 {
+    padding: 5px 15px 15px;
+  }
+
+  .product-card p:last-child {
+    text-align: center;
+  }
+
+  .product-category {
+    display: block;
+  }
+
 
   .contact-info {
     grid-template-columns: 1fr;
