@@ -14,7 +14,7 @@
 }
 
 /* Reset Styles */
-* {
+*, *::before, *::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -39,10 +39,6 @@ a {
 img {
   max-width: 100%;
   height: auto;
-}
-
-*, *::before, *::after {
-  box-sizing: border-box;
 }
 
 html, body {
