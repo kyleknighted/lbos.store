@@ -12,7 +12,7 @@
   --border-radius: 8px;
   --box-shadow: 0 4px 8px rgba(62, 39, 35, 0.25);
 
-  --min-width: 400px;
+  --min-width: 360px;
 }
 
 /* Reset Styles */
@@ -71,6 +71,10 @@ h1, h2, h3, h4 {
   margin: 0 auto;
   padding: 0 20px;
   overflow: hidden;
+
+  p {
+    margin-block: 2.5rem;
+  }
 
   @container (max-width: 400px) {
     & {
