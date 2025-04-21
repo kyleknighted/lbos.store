@@ -4,3 +4,9 @@
 .env.local
 .env.development
 .env.production
+
+# ignore static files
+static/
+
+# ignore build files
+build/
