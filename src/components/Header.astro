@@ -1,0 +1,65 @@
+---
+import LogoText from "../assets/logo-text.png";
+import Cabin from "../assets/cabin.png";
+---
+
+<header>
+  <a href="index.html" id="logo">
+    <h1>Lil Bit of Something</h1>
+    <p class="tagline">Your One-Stop Country Store</p>
+  </a>
+</header>
+
+<style>
+  header {
+    container-name: header;
+    container-type: inline-size;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    min-width: var(--min-width);
+    background-color: var(--light-color);
+
+    #logo {
+      display: flex;
+      width: 100%;
+      box-shadow: var(--box-shadow);
+      align-items: center;
+      justify-content: center;
+      flex-direction: row-reverse;
+      padding: 2cqh;
+
+      h1 {
+        font-size: 2.5rem;
+        margin-bottom: 0;
+        background: url({LogoText.src}) no-repeat center center;
+        background-size: contain;
+        width: 400px;
+        height: 180px;
+        display: inline-block;
+        text-indent: -9999px;
+        margin-inline-start: -100px;
+      }
+
+      .tagline {
+        content: "";
+        background: url({Cabin.src}) no-repeat center center;
+        background-size: contain;
+        width: 220px;
+        height: 125px;
+        display: block;
+        display: inline-block;
+        text-indent: -9999px;
+        opacity: 0.5;
+      }
+    }
+
+    @container header (max-width: 768px) {
+      & {
+        .logo {
+          padding: 1cqh 0;
+        }
+      }
+    }
+  }
+</style>

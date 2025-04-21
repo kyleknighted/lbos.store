@@ -1,5 +1,6 @@
 ---
 import BackToTopButton from "../components/BackToTopButton.astro";
+import Header from "../components/Header.astro";
 ---
 
 <!doctype html>
@@ -33,14 +34,26 @@ import BackToTopButton from "../components/BackToTopButton.astro";
       href="images/favicon/favicon-16x16.png"
     />
     <link rel="manifest" href="images/favicon/site.webmanifest" />
+    <style>
+      :root {
+        --primary-color: #7e4320;
+        --secondary-color: #5f7470;
+        --tertiary-color: #1b9aaa;
+        --dark-color: #3e2723;
+        --light-color: #fff;
+
+        --text-color: var(--dark-color);
+        --light-text: var(--light-color);
+
+        --border-radius: 8px;
+        --box-shadow: 0 4px 8px rgba(62, 39, 35, 0.25);
+
+        --min-width: 360px;
+      }
+    </style>
   </head>
   <body>
-    <header>
-      <a href="index.html" class="logo">
-        <h1>Lil Bit of Something</h1>
-        <p class="tagline">Your One-Stop Country Store</p>
-      </a>
-    </header>
+    <Header />
 
     <html lang="en">
       <head>
