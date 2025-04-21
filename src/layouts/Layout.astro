@@ -1,3 +1,7 @@
+---
+import BackToTopButton from "../components/BackToTopButton.astro";
+---
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -73,16 +77,18 @@
 
       <body>
         <slot />
+
+        <footer>
+          <div class="container">
+            <p>
+              &copy; Lil Bit of Something &middot; Strode Properties, LLC. All
+              rights reserved.
+            </p>
+          </div>
+        </footer>
+
+        <BackToTopButton />
       </body>
     </html>
-
-    <style>
-      html,
-      body {
-        margin: 0;
-        width: 100%;
-        height: 100%;
-      }
-    </style>
   </body>
 </html>
