@@ -11,6 +11,8 @@
 
   --border-radius: 8px;
   --box-shadow: 0 4px 8px rgba(62, 39, 35, 0.25);
+
+  --min-width: 400px;
 }
 
 /* Reset Styles */
@@ -43,7 +45,7 @@ img {
 
 html, body {
   min-height: 100%;
-  min-width: 400px;
+  min-width: var(--min-width);
 }
 
 /* Base Styles */
@@ -61,11 +63,20 @@ h1, h2, h3, h4 {
 }
 
 .container {
+  container-name: container;
+  container-type: inline-size;
   width: 90cqw;
   max-width: 1200px;
+  min-width: var(--min-width);
   margin: 0 auto;
   padding: 0 20px;
   overflow: hidden;
+
+  @container (max-width: 400px) {
+    & {
+      padding: 0 5px;
+    }
+  }
 }
 
 section {
@@ -112,6 +123,7 @@ header {
   position: sticky;
   top: 0;
   z-index: 100;
+  min-width: var(--min-width);
   background-color: var(--light-color);
 
   .logo {
@@ -298,6 +310,10 @@ header {
     color: var(--primary-color);
     margin-bottom: 15px;
   }
+
+  @media (max-width: 1000px) {
+    grid-template-columns: 1fr;
+  }
 }
 
 
@@ -308,42 +324,17 @@ footer {
   color: var(--light-text);
   padding: 30px 0;
   text-align: center;
+  min-width: var(--min-width);
 }
 
-/* Responsive Design */
-/* @media (max-width: 1024px) {
-  header {
-    padding: 1cqh 0;
-    height: 125px;
+#steel-building-form {
+  padding-block-start: 2.5rem;
+
+  div {
+    margin-block-end: 1rem;
   }
 
-  header .container {
-    flex-direction: column;
-    text-align: center;
+  input {
+    border-block-end: 1px solid var(--dark-color);
   }
-
-  #hero h2 {
-    font-size: 2.2rem;
-  }
-
-  .product-category-header h2 {
-    position: relative;
-  }
-
-  .product-category-header h3 {
-    padding: 5px 15px 15px;
-  }
-
-  .product-card p:last-child {
-    text-align: center;
-  }
-
-  .product-category {
-    display: block;
-  }
-
-
-  .contact-info {
-    grid-template-columns: 1fr;
-  }
-} */
+}

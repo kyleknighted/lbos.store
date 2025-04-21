@@ -32,13 +32,62 @@
 
       <p>Looking for a strong, reliable way to protect what matters? Our custom steel buildings are built tough to handle Missouri weather and versatile enough to fit just about any need—from storing tools and tractors to housing RVs, boats, or extra vehicles. Whether you're adding a workshop, covering your camper, or building a backyard barn, we'll help you design a structure that fits your space, your style, and your budget. With quality materials, quick delivery, and professional installation, it's never been easier to build something that lasts.</p>
 
-      <iframe
-        src="https://docs.google.com/forms/d/e/1FAIpQLSfwoEz3xXmO3UYEV6_UENCF-S7brnWzyuDKHcwbUdS4lIeQYg/viewform?embedded=true"
-        width="100%"
-        height="1715"
-        frameborder="0"
-        marginheight="0"
-        marginwidth="0">Loading…</iframe>
+      <form id="steel-building-form" action="https://formspree.io/f/xldjqbpb" method="POST">
+        <div>
+          <label>
+            <span>Name:</span>
+            <input type="text" name="name" />
+          </label>
+        </div>
+        <div>
+          <label>
+            <span>Email:</span>
+            <input type="email" name="email" />
+          </label>
+        </div>
+        <div>
+          <label>
+            <span>Phone:</span>
+            <input type="tel" name="phone" />
+          </label>
+        </div>
+        <div>
+          <label>
+            <span>Message:</span>
+            <input type="text" name="message" />
+          </label>
+        </div>
+        <div>
+          <label>
+            <span>Lot/Block/Section:</span>
+            <input type="text" name="lot-block-section" />
+          </label>
+        </div>
+        <div>
+            <span>Type of Building:</span>
+            <div class="radio-group">
+              <div>
+                <input type="radio" id="rv-cover" name="type-of-building" value="RV Cover">
+                <label for="rv-cover">RV Cover</label>
+              </div>
+              <div>
+                <input type="radio" id="carport" name="type-of-building" value="Carport">
+                <label for="carport">Carport</label>
+              </div>
+              <div>
+                <input type="radio" id="storage" name="type-of-building" value="Storage">
+                <label for="storage">Storage</label>
+              </div>
+              <div>
+                <input type="radio" id="other" name="type-of-building" value="Other">
+                <label for="other">Other</label>
+                <input type="text" name="type-of-building-other" />
+              </div>
+            </div>
+        </div>
+        <button id="my-form-button">Submit</button>
+        <p id="my-form-status"></p>
+      </form>
     </div>
   </section>
 
@@ -75,5 +124,38 @@
   </footer>
 
   <script src="scripts/script.js"></script>
+
+  <script>
+    var form = document.getElementById("my-form");
+
+    async function handleSubmit(event) {
+      event.preventDefault();
+      var status = document.getElementById("my-form-status");
+      var data = new FormData(event.target);
+      fetch(event.target.action, {
+        method: form.method,
+        body: data,
+        headers: {
+            'Accept': 'application/json'
+        }
+      }).then(response => {
+        if (response.ok) {
+          status.innerHTML = "Thanks for your submission!";
+          form.reset()
+        } else {
+          response.json().then(data => {
+            if (Object.hasOwn(data, 'errors')) {
+              status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
+            } else {
+              status.innerHTML = "Oops! There was a problem submitting your form"
+            }
+          })
+        }
+      }).catch(error => {
+        status.innerHTML = "Oops! There was a problem submitting your form"
+      });
+    }
+    form.addEventListener("submit", handleSubmit)
+  </script>
 </body>
 </html>
