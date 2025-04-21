@@ -1,6 +1,8 @@
 ---
 import BackToTopButton from "../components/BackToTopButton.astro";
 import Header from "../components/Header.astro";
+import DefaultStyles from "../components/DefaultStyles.astro";
+import Footer from "../components/Footer.astro";
 ---
 
 <!doctype html>
@@ -34,23 +36,7 @@ import Header from "../components/Header.astro";
       href="images/favicon/favicon-16x16.png"
     />
     <link rel="manifest" href="images/favicon/site.webmanifest" />
-    <style>
-      :root {
-        --primary-color: #7e4320;
-        --secondary-color: #5f7470;
-        --tertiary-color: #1b9aaa;
-        --dark-color: #3e2723;
-        --light-color: #fff;
-
-        --text-color: var(--dark-color);
-        --light-text: var(--light-color);
-
-        --border-radius: 8px;
-        --box-shadow: 0 4px 8px rgba(62, 39, 35, 0.25);
-
-        --min-width: 360px;
-      }
-    </style>
+    <DefaultStyles />
   </head>
   <body>
     <Header />
@@ -91,14 +77,7 @@ import Header from "../components/Header.astro";
       <body>
         <slot />
 
-        <footer>
-          <div class="container">
-            <p>
-              &copy; Lil Bit of Something &middot; Strode Properties, LLC. All
-              rights reserved.
-            </p>
-          </div>
-        </footer>
+        <Footer />
 
         <BackToTopButton />
       </body>
