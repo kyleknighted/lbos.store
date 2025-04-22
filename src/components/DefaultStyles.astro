@@ -70,23 +70,15 @@
   }
 
   .container {
-    container-name: container;
-    container-type: inline-size;
     width: 90cqw;
     max-width: 1200px;
     min-width: var(--min-width);
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 5px;
     overflow: hidden;
 
     p {
-      margin-block: 2.5rem;
-    }
-
-    @container (max-width: 400px) {
-      & {
-        padding: 0 5px;
-      }
+      margin-block: min(5vw, 2.5rem);
     }
   }
 
@@ -101,29 +93,5 @@
 
   a:hover {
     color: var(--tertiary-color);
-  }
-
-  .btn {
-    display: inline-block;
-    background-color: var(--secondary-color);
-    color: var(--light-text);
-    padding: 12px 24px;
-    border-radius: var(--border-radius);
-    font-weight: 600;
-    transition: background-color 0.3s ease;
-  }
-
-  .btn:hover {
-    background-color: var(--tertiary-color);
-    color: var(--light-text);
-  }
-
-  .btn .arrow {
-    transition: transform 0.3s ease;
-    display: inline-block;
-  }
-
-  .btn:hover .arrow {
-    transform: translateX(5px);
   }
 </style>

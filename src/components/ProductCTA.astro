@@ -1,0 +1,37 @@
+---
+interface Props {
+  href: string
+  text: string
+}
+const { href, text } = Astro.props
+---
+
+<a href={href} class="cta">{text} <span class="arrow">&rarr;</span></a>
+
+<style>
+  .cta {
+    font-size: min(3vw, 14px);
+    display: inline-block;
+    background-color: var(--secondary-color);
+    color: var(--light-text);
+    padding: min(1.5vw, 12px) min(3vw, 24px);
+    border-radius: var(--border-radius);
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+    width: 100%;
+
+    &:hover {
+      background-color: var(--tertiary-color);
+      color: var(--light-text);
+    }
+
+    & .arrow {
+      transition: transform 0.3s ease;
+      display: inline-block;
+    }
+
+    &:hover .arrow {
+      transform: translateX(5px);
+    }
+  }
+</style>
