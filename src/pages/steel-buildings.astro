@@ -1,48 +1,48 @@
 ---
-import ContactArea from "../components/ContactArea.astro";
-import Layout from "../layouts/Layout.astro";
-import SteelBuildingImage from "../assets/steel-building.webp";
+import ContactArea from '../components/ContactArea.astro'
+import Layout from '../layouts/Layout.astro'
+import SteelBuildingImage from '../assets/product-steel-building.webp'
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
 <Layout>
-	<section id="products">
-		<div class="container">
-			<h2>Steel Buildings</h2>
-			<h3>Versatile Steel Structures Tailored to Your Needs</h3>
+  <section id="products">
+    <div class="container">
+      <h2>Steel Buildings</h2>
+      <h3>Versatile Steel Structures Tailored to Your Needs</h3>
 
-			<div class="product-image">
-				<img src={SteelBuildingImage.src} alt="Steel Building" />
-			</div>
+      <div class="product-image">
+        <img src={SteelBuildingImage.src} alt="Steel Building" />
+      </div>
 
-			<p>
-				Looking for a strong, reliable way to protect what matters? Our custom steel buildings are
-				built tough to handle Missouri weather and versatile enough to fit just about any need—from
-				storing tools and tractors to housing RVs, boats, or extra vehicles. Whether you're adding a
-				workshop, covering your camper, or building a backyard barn, we'll help you design a
-				structure that fits your space, your style, and your budget. With quality materials, quick
-				delivery, and professional installation, it's never been easier to build something that
-				lasts.
-			</p>
+      <p>
+        Looking for a strong, reliable way to protect what matters? Our custom steel buildings are
+        built tough to handle Missouri weather and versatile enough to fit just about any need—from
+        storing tools and tractors to housing RVs, boats, or extra vehicles. Whether you're adding a
+        workshop, covering your camper, or building a backyard barn, we'll help you design a
+        structure that fits your space, your style, and your budget. With quality materials, quick
+        delivery, and professional installation, it's never been easier to build something that
+        lasts.
+      </p>
 
-			<iframe
-				class="basinIframe"
-				src="https://usebasin.com/form/46e877b1391c/view/8c5b7cce6dbc?iframe=true"
-				allowtransparency="true"
-				frameborder="0"
-				style="border: none; overflow: hidden;"
-				onload="var self = this; self.contentWindow.postMessage('getHeight', '*'); setInterval(function() { self.contentWindow.postMessage('getHeight', '*'); }, 500); window.addEventListener('message', function(event) { if (event.data.action === 'setHeight') { self.style.height = event.data.height + 'px'; } });"
-				width="100%"></iframe><script type="text/javascript">
-				window.addEventListener("message", function (event) {
-					if (event.data.action === "redirect") {
-						window.location.href = event.data.url;
-					}
-				});
-			</script>
-		</div>
-	</section>
+      <iframe
+        class="basinIframe"
+        src="https://usebasin.com/form/46e877b1391c/view/8c5b7cce6dbc?iframe=true"
+        allowtransparency="true"
+        frameborder="0"
+        style="border: none; overflow: hidden;"
+        onload="var self = this; self.contentWindow.postMessage('getHeight', '*'); setInterval(function() { self.contentWindow.postMessage('getHeight', '*'); }, 500); window.addEventListener('message', function(event) { if (event.data.action === 'setHeight') { self.style.height = event.data.height + 'px'; } });"
+        width="100%"></iframe><script type="text/javascript">
+        window.addEventListener('message', function (event) {
+          if (event.data.action === 'redirect') {
+            window.location.href = event.data.url
+          }
+        })
+      </script>
+    </div>
+  </section>
 
-	<ContactArea />
+  <ContactArea />
 </Layout>
