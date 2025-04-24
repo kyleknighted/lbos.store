@@ -5,7 +5,7 @@
       <div class="address">
         <h3>Visit Us</h3>
         <p>
-          <a href="https://goo.gl/maps/11891MineRd" target="_blank"
+          <a href="https://maps.app.goo.gl/EtBkcaS8TYB67bqd6" target="_blank"
             >11891 Mine Rd<br />Sullivan, MO 63080</a
           >
         </p>
@@ -25,7 +25,9 @@
         <p><a href="tel:+15734689026">(573) 468-9026</a></p>
         <h3>Email Us</h3>
         <p>
-          <a href="mailto:strodeproperties@gmail.com">strodeproperties@gmail.com</a>
+          <a href="mailto:strodeproperties@gmail.com" class="email-content"
+            >strodeproperties@gmail.com</a
+          >
         </p>
       </div>
     </div>
@@ -36,28 +38,31 @@
   #contact {
     background-color: var(--secondary-color);
     color: var(--dark-color);
-  }
 
-  #contact p {
-    margin-bottom: 20px;
-    font-size: 1.1rem;
-  }
+    p {
+      margin-block: min(3vw, 1.5rem);
+      font-size: 0.9rem;
 
-  /* Contact Section */
-  #contact h2 {
-    text-align: center;
-    margin-bottom: 40px;
-    color: var(--light-color);
+      @media screen and (min-width: 768px) {
+        font-size: 1.1rem;
+      }
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 5vw;
+      color: var(--light-color);
+    }
   }
 
   .contact-info {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: 1fr;
     gap: 30px;
 
     > div {
       background-color: var(--light-color);
-      padding: 3cqh 0;
+      padding: 3cqw 0.5cqw;
       border-radius: var(--border-radius);
       box-shadow: var(--box-shadow);
       text-align: center;
@@ -65,11 +70,15 @@
 
     h3 {
       color: var(--primary-color);
-      margin-bottom: 15px;
+      margin-block-end: min(3vw, 1.25rem);
     }
 
-    @media screen and (max-width: 1000px) {
-      grid-template-columns: 1fr;
+    @media screen and (min-width: 768px) {
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     }
+  }
+
+  .email-content {
+    word-break: break-all;
   }
 </style>

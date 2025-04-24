@@ -2,7 +2,7 @@
 import ContactArea from '../components/ContactArea.astro'
 import Layout from '../layouts/Layout.astro'
 import SteelBuildingImage from '../assets/product-steel-building.webp'
-
+import { Image } from 'astro:assets'
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
@@ -14,7 +14,7 @@ import SteelBuildingImage from '../assets/product-steel-building.webp'
       <h3>Versatile Steel Structures Tailored to Your Needs</h3>
 
       <div class="product-image">
-        <img src={SteelBuildingImage.src} alt="Steel Building" />
+        <Image src={SteelBuildingImage} alt="Steel Building" />
       </div>
 
       <p>

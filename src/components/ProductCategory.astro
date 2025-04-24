@@ -1,9 +1,11 @@
 ---
+import { Image } from 'astro:assets'
+
 interface Props {
   title: string
   description: string
   image: {
-    src: string
+    src: ImageMetadata
     alt: string
   }
   href: string
@@ -12,7 +14,7 @@ const { title, description, image, href } = Astro.props
 ---
 
 <a class="product-category-header" href={href}>
-  <img src={image.src} alt={image.alt} class="product-image" />
+  <Image src={image.src} alt={image.alt} class="product-image" />
 
   <h2>{title}</h2>
   <h3>{description}</h3>
@@ -29,8 +31,8 @@ const { title, description, image, href } = Astro.props
       color: var(--dark-color);
       font-size: min(7.5vw, 44px);
       line-height: 1;
-      padding-inline-start: 0.5rem;
-      padding-block-start: 3vw;
+      padding-inline: 0.5rem;
+      padding-block-start: min(3vw, 1.25rem);
       position: absolute;
       inset: 0;
       z-index: 1;

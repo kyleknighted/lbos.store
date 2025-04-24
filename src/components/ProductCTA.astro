@@ -11,7 +11,9 @@ const { href, text } = Astro.props
 <style>
   .cta {
     font-size: min(3vw, 14px);
-    display: inline-block;
+    display: inline-flex;
+    gap: 1rem;
+    justify-content: space-between;
     background-color: var(--secondary-color);
     color: var(--light-text);
     padding: min(1.5vw, 12px) min(3vw, 24px);
@@ -32,6 +34,11 @@ const { href, text } = Astro.props
 
     &:hover .arrow {
       transform: translateX(5px);
+    }
+
+    @media screen and (min-width: 768px) {
+      justify-content: flex-start;
+      width: auto;
     }
   }
 </style>
