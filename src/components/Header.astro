@@ -1,53 +1,59 @@
+---
+import { Image } from 'astro:assets'
+import LogoText from '../assets/logo-text.png'
+import Cabin from '../assets/cabin.png'
+---
+
 <header>
   <a href="/" id="logo">
-    <h1>Lil Bit of Something</h1>
-    <p class="tagline">Your One-Stop Country Store</p>
+    <h1><Image src={LogoText} alt="Lil Bit of Something" /></h1>
+    <h2><Image src={Cabin} alt="Your One-Stop Country Store" /></h2>
   </a>
 </header>
 
 <style>
   header {
-    container-name: header;
-    container-type: inline-size;
     position: sticky;
     top: 0;
     z-index: 100;
     min-width: var(--min-width);
     background-color: var(--light-color);
+    box-shadow: var(--box-shadow);
+    height: 20cqw;
+    max-height: 200px;
+    padding: 2cqh;
 
     #logo {
-      display: flex;
+      display: block;
+      position: relative;
       width: 100%;
-      height: 35cqw;
-      max-height: 200px;
-      box-shadow: var(--box-shadow);
-      align-items: center;
-      justify-content: center;
-      flex-direction: row-reverse;
-      padding: 2cqh;
+      height: 100%;
+      text-align: center;
 
       h1 {
         font-size: 2.5rem;
         margin-bottom: 0;
-        background: url('logo-text.png') no-repeat center center;
-        background-size: contain;
-        width: 400px;
-        height: 180px;
+        max-width: 400px;
+        width: auto;
+        height: 100%;
         display: inline-block;
-        text-indent: -9999px;
-        margin-inline-start: -100px;
       }
 
-      .tagline {
-        content: '';
-        background: url('cabin.png') no-repeat center center;
-        background-size: contain;
-        width: 220px;
-        height: 125px;
+      h2 {
+        max-width: 220px;
+        height: 10vw;
         display: block;
-        display: inline-block;
-        text-indent: -9999px;
         opacity: 0.5;
+        position: absolute;
+        inset: 50% auto auto 50%;
+        margin-inline-start: max(-30vw, -310px);
+        margin-block-start: max(-5vw, -55px);
+      }
+
+      img {
+        display: block;
+        height: 100%;
+        width: auto;
       }
     }
 
