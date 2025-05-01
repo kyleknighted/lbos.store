@@ -20,10 +20,15 @@ import ProductCTA from './ProductCTA.astro'
 
       <div class="product-card">
         <p>
-          Your RV is an investment—protect it like one. Our tall,
-          <strong>open-sided carports</strong> are specially designed to accommodate
-          <strong>RVs, motorhomes, and travel trailers</strong>. Choose extra height, add side
-          panels for better weather protection, or fully enclose it for long-term storage.
+          Your RV is an investment—protect it like one. Our premium <strong
+            >steel RV carports</strong
+          > and
+          <strong>open-sided shelters</strong> are engineered to provide superior protection for your
+          <strong>RVs, motorhomes, and travel trailers</strong>. Customize your perfect solution
+          with
+          <strong>extra height options</strong>, <strong>weather-resistant side panels</strong>, or
+          <strong>fully enclosed storage</strong> to safeguard your recreational vehicle investment from
+          Missouri's unpredictable weather conditions.
         </p>
         <p>
           <ProductCTA href="/steel-buildings" text="Get a free quote today" />
@@ -43,35 +48,17 @@ import ProductCTA from './ProductCTA.astro'
         <p>
           Tucked away in the heart of Missouri's scenic countryside, our little country store at <strong
             >Woodland Lakes in Sullivan, MO</strong
-          > is more than just a pit stop— it's a friendly place where locals, campers, and park-goers
-          all come together. Conveniently accessible both from inside the Woodland Lakes community and
-          from Mine Road outside, we're a perfect stop before or after your next adventure.
-        </p>
-        <p>
-          <ProductCTA href="/location" text="Your essential stop" />
-        </p>
-      </div>
-    </div>
-
-    <div class="product-category" id="campfire-ready">
-      <ProductCategoryHeader
-        title="Campfire Ready in One Stop"
-        description="Be prepared for an evening under the stars"
-        image={{ src: productCampfireReady, alt: 'Campfire Ready' }}
-        href="/location"
-      />
-
-      <div class="product-card">
-        <p>
-          We're proud to serve folks heading out to explore <strong>Meramec State Park</strong>, <strong
+          > is more than just a pit stop — it's a friendly gathering place for locals, campers, and park-goers.
+          Conveniently accessible from both inside the Woodland Lakes community and Mine Road outside,
+          we're proud to serve folks exploring <strong>Meramec State Park</strong>, <strong
             >Onondaga Cave State Park</strong
-          >, or the sprawling <strong>Mark Twain National Forest</strong>—some of Missouri's finest
-          destinations for hiking, camping, floating, and good old-fashioned outdoor fun. Whether
-          you're loading up for a weekend under the stars or just wrapping up a long day on the
-          trails, we've got what you need.
+          >, and the sprawling <strong>Mark Twain National Forest</strong>—Missouri's finest
+          destinations for hiking, camping, floating, and outdoor adventures. Whether you're loading
+          up for a weekend under the stars or wrapping up a day on the trails, we're your perfect
+          stop with everything you need.
         </p>
         <p>
-          <ProductCTA href="/location" text="Everything you need, right here" />
+          <ProductCTA href="/location" text="Find us on the map" />
         </p>
       </div>
     </div>
@@ -89,9 +76,7 @@ import ProductCTA from './ProductCTA.astro'
           Grab a hot meal from our kitchen—<strong>burgers</strong>, <strong>breakfast</strong>,
           <strong>pizza</strong>, <strong>shakes</strong>, and more—or stock up on cold beer,
           spirits, and tobacco products to help you unwind. We also carry groceries, camping gear,
-          ice, and snacks, so you won't have to run all over town. And if you're planning ahead for
-          your property or campsite, check out our lineup of <strong>steel buildings</strong> and
-          <strong>carports</strong>, custom-built and ready for delivery.
+          ice, and snacks, so you won't have to run all over town.
         </p>
         <p>
           <ProductCTA
@@ -107,19 +92,23 @@ import ProductCTA from './ProductCTA.astro'
         title="Alcohol, Beer, & Tobacco"
         description="Mixers & More for the Perfect Pour"
         image={{ src: productAlcoholBeerTobacco, alt: 'Alcohol, Beer, & Tobacco' }}
-        href="https://www.facebook.com/share/p/1EU4qrfmiK/"
+        href="https://www.facebook.com/ls4e1"
       />
 
       <div class="product-card">
         <p>
-          From <strong>hot food</strong> and <strong>cold drinks</strong> to sturdy buildings and trail-ready
-          supplies, you'll always find a <em>Lil Bit of Something</em> here. Stop by, say hello, and
-          let us help you get set for whatever's next.
+          Whether you're stocking up for your next outdoor adventure or just need a quick bite,
+          you'll find everything you need at <em>Lil Bit of Something</em>. From our famous <strong
+            >hot food</strong
+          > and refreshing <strong>cold drinks</strong> to durable <strong>steel buildings</strong> and
+          essential <strong>camping supplies</strong>, we've got you covered. Swing by our Sullivan,
+          MO location, meet our friendly staff, and let us help you gear up for your next adventure
+          in the beautiful Meramec Valley.
         </p>
         <p>
           <ProductCTA
-            href="https://www.facebook.com/share/p/1EU4qrfmiK/"
-            text="Call for hot food and cold drinks"
+            href="https://www.facebook.com/ls4e1"
+            text="Check our social media for specials"
           />
         </p>
       </div>
@@ -132,7 +121,7 @@ import ProductCTA from './ProductCTA.astro'
     padding-block-end: min(10vw, 1.5rem);
 
     p {
-      font-size: min(3vw, 16px);
+      font-size: clamp(12px, 3vw, 16px);
     }
 
     .product-card {

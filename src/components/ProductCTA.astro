@@ -11,7 +11,7 @@ const { href, text } = Astro.props
 <style>
   .cta {
     font-size: min(3vw, 14px);
-    display: inline-flex;
+    display: flex;
     gap: 1rem;
     justify-content: space-between;
     background-color: var(--secondary-color);
@@ -20,7 +20,8 @@ const { href, text } = Astro.props
     border-radius: var(--border-radius);
     font-weight: 600;
     transition: background-color 0.3s ease;
-    width: 100%;
+    width: 80%;
+    margin: 0 auto;
 
     &:hover {
       background-color: var(--tertiary-color);

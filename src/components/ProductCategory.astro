@@ -30,7 +30,7 @@ const { title, description, image, href } = Astro.props
       text-transform: uppercase;
       text-shadow: 0 0 1px var(--light-color);
       color: var(--dark-color);
-      font-size: min(7.5vw, 44px);
+      font-size: clamp(25px, 7.5vw, 45px);
       line-height: 1;
       padding-inline: 0.5rem;
       padding-block-start: min(3vw, 1.25rem);
@@ -41,7 +41,7 @@ const { title, description, image, href } = Astro.props
     }
 
     h3 {
-      font-size: min(3vw, 14px);
+      font-size: clamp(12px, 3vw, 16px);
       color: var(--dark-color);
       font-family: 'Libre Baskerville', sans-serif;
       font-style: italic;
@@ -58,7 +58,7 @@ const { title, description, image, href } = Astro.props
 
   .product-image {
     max-height: 200px;
-    height: 25cqw;
+    height: max(20cqw, 72px);
     overflow: hidden;
     display: flex;
     align-items: center;
