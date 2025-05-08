@@ -1,0 +1,367 @@
+{
+  "shareables": {
+    "name": "Shareables",
+    "items": [
+      {
+        "name": "Pick Two",
+        "options": [
+          "Chicken Tenders",
+          "Popcorn Chicken",
+          "Seasoned fries",
+          "Crinkle fries",
+          "Onion rings",
+          "Toasted Raviolis",
+          "Jalapeños Poppers",
+          "Jalapeños Bites",
+          "Mozzarella Sticks",
+          "Tater Kegs",
+          "Potato Wedges",
+          "Spicy Pickle Fries",
+          "Fried Mushrooms",
+          "Broccoli Cheddar Bites",
+          "Fried Cauliflower",
+          "Mini Taco’s"
+        ],
+        "type": "multi-select",
+        "description": "Pick any two",
+        "price": "$8.50"
+      },
+      {
+        "name": "Nacho & Cheese",
+        "price": "$5.99"
+      },
+      {
+        "name": "Bowl of Chili",
+        "price": "$6.50"
+      },
+      {
+        "name": "Pretzel (w/ Cheese)",
+        "price": "$3.50"
+      },
+      {
+        "name": "Dirty Fries or Nachos",
+        "description": "Choice of Pulled Pork or Chili",
+        "price": "$12.99"
+      }
+    ]
+  },
+  "wraps": {
+    "name": "Wraps",
+    "items": [
+      {
+        "name": "BLT Wrap",
+        "price": "$8.99"
+      },
+      {
+        "name": "Chicken Bacon Ranch Wrap",
+        "description": "Popcorn Chicken, Shredded cheese, Bacon Bits and Ranch Dressing. Optional, Lettuce, Tomato, Onions, Black Olives",
+        "price": "$9.50"
+      }
+    ]
+  },
+  "hotdogs": {
+    "name": "Hotdogs",
+    "description": "1/4 pound hot dogs",
+    "items": [
+      {
+        "name": "Regular",
+        "price": "$5.99"
+      },
+      {
+        "name": "Chili Dog",
+        "price": "$7.99"
+      }
+    ]
+  },
+  "burgers": {
+    "name": "Burgers",
+    "description": "All of our burgers are ¼ lbs Angus & come with Lettuce, Tomato, Pickles & Onion, unless otherwise noted.",
+    "items": [
+      {
+        "name": "Hamburger",
+        "price": "$9.99"
+      },
+      {
+        "name": "Cheeseburger",
+        "price": "$10.25"
+      },
+      {
+        "name": "Double Cheeseburger",
+        "price": "$14.99"
+      },
+      {
+        "name": "Fat Pat",
+        "description": "2 Patties, 4 Bacon Slices, 2 Cheese",
+        "price": "$16.75"
+      },
+      {
+        "name": "Western Burger",
+        "description": "Patty, Pepper Jack Cheese, Jalapeños, Onions, 2 Onion Rings, BBQ Sauce",
+        "price": "$16.75"
+      },
+      {
+        "name": "Woodland Burger",
+        "description": "1 Patty, American Cheese, Chili, Onion, Jalapeños",
+        "price": "$16.75"
+      }
+    ]
+  },
+  "sandwiches": {
+    "name": "Sandwiches",
+    "items": [
+      {
+        "name": "Cod (Fish) on Bun",
+        "description": "Square 4 oz Cod, with American Cheese & Lettuce",
+        "price": "$10.99"
+      },
+      {
+        "name": "Pulled Pork on Bun",
+        "description": "Our Zesty Pulled Pork on a bun",
+        "price": "$10.99"
+      },
+      {
+        "name": "Grilled Chicken on Bun",
+        "description": "Grilled Chicken Breast, American Cheese, Lettuce, Tomato",
+        "price": "$11.99"
+      },
+      {
+        "name": "Philly Sub",
+        "description": "Steak, Onions, Green Pepper, Provolone Blend on a Sub bun",
+        "price": "$12.99"
+      }
+    ]
+  },
+  "specialty-pizza": {
+    "name": "Specialty Pizza",
+    "sizes": [
+      {
+        "name": "9\"",
+        "price": "$11.99"
+      },
+      {
+        "name": "12\"",
+        "price": "$17.99"
+      }
+    ],
+    "items": [
+      {
+        "name": "BBQ Pulled Pork",
+        "description": "Pulled Pork, BBQ Sauce and 6 Cheese Blend"
+      },
+      {
+        "name": "Buffalo Chicken",
+        "description": "Chicken, Buffalo Sauce, and 6 Cheese Blend"
+      },
+      {
+        "name": "Breakfast Pizza",
+        "description": "Bacon, Sausage, Eggs, Gravy and 6 Cheese Blend"
+      },
+      {
+        "name": "Chicken Alfredo",
+        "description": "Alfredo Sauce, Grilled Chicken, Bacon Bits, Jalapeños, Onions, Cheese"
+      },
+      {
+        "name": "Hawaiian",
+        "description": "Canadian Bacon, Pineapple and 6 Cheese Blend"
+      },
+      {
+        "name": "Supreme",
+        "description": "Pepperoni, Sausage, Black Olives, Green Peppers, Onions, 6 Cheese Blend"
+      },
+      {
+        "name": "RoadKill",
+        "description": "Sausage, Pepperoni, Bacon, Ham, Beef Crumbles, Sauce, and 6 Cheese Blend",
+        "sizes": [
+          {
+            "name": "9\"",
+            "price": "$12.99"
+          },
+          {
+            "name": "12\"",
+            "price": "$19.99"
+          }
+        ]
+      },
+      {
+        "name": "Garbage",
+        "description": "Sausage, Pepperoni, Bacon, Ham, Beef Crumbles, Black Olives, Jalapenos, Onions, Mushrooms, Green Peppers, Banana Peppers, Sauce and 6 Cheese Blend",
+        "sizes": [
+          {
+            "name": "9\"",
+            "price": "$13.99"
+          },
+          {
+            "name": "12\"",
+            "price": "$20.99"
+          }
+        ]
+      }
+    ]
+  },
+  "pizza": {
+    "name": "Pizza",
+    "sizes": [
+      {
+        "name": "9\"",
+        "price": "$9.99"
+      },
+      {
+        "name": "12\"",
+        "price": "$14.99"
+      }
+    ],
+    "description": "Up to 2 meats and 2 veggies",
+    "options": [
+      {
+        "name": "Meats",
+        "items": ["Bacon Bits", "Sausage", "Pepperoni", "Canadian bacon", "Beef Crumbles"]
+      },
+      {
+        "name": "Veggies",
+        "items": [
+          "Banana Pepper",
+          "Green pepper",
+          "Onion",
+          "Jalapeños",
+          "Black Olives",
+          "Pineapple",
+          "Mushrooms"
+        ]
+      }
+    ]
+  },
+  "icecream": {
+    "name": "Ice Cream",
+    "description": "Ice Cream Flavors will be listed on the board by the checkout",
+    "items": [
+      {
+        "name": "Sugar Cones",
+        "price": "$3.99"
+      },
+      {
+        "name": "12oz Cup",
+        "price": "$5.50"
+      },
+      {
+        "name": "Waffle Cone",
+        "price": "$4.99"
+      },
+      {
+        "name": "16oz Cup",
+        "price": "$6.50"
+      },
+      {
+        "name": "Shakes 16oz",
+        "price": "$6.99"
+      },
+      {
+        "name": "Extra Scoop",
+        "price": "$2.99"
+      }
+    ]
+  },
+  "breakfast": {
+    "name": "Breakfast",
+    "description": "Served until 11am",
+    "items": [
+      {
+        "name": "Single Biscuit & Gravy",
+        "price": "$4.59"
+      },
+      {
+        "name": "Double Biscuit & Gravy",
+        "price": "$6.99"
+      },
+      {
+        "name": "French Toast Sticks",
+        "price": "$4.75"
+      },
+      {
+        "name": "Steak, Egg, & Cheese Burrito",
+        "price": "$8.99"
+      },
+      {
+        "name": "Bacon, Egg, & Cheese Burrito",
+        "price": "$8.59"
+      },
+      {
+        "name": "Egg & Cheese Burrito",
+        "price": "$5.99"
+      },
+      {
+        "name": "Breakfast Bake",
+        "price": "$10.50"
+      },
+      {
+        "name": "Chris’s “Big A” Sandwich",
+        "price": "$8.99"
+      },
+      {
+        "name": "Sausage Biscuit",
+        "price": "$3.99"
+      },
+      {
+        "name": "Sausage, Egg, Cheese Biscuit",
+        "price": "$5.25"
+      },
+      {
+        "name": "Bacon, Egg, Cheese Biscuit",
+        "price": "$5.50"
+      },
+      {
+        "name": "Egg & Cheese on Bun",
+        "price": "$3.50"
+      },
+      {
+        "name": "Breakfast Platter",
+        "price": "$10.50"
+      },
+      {
+        "name": "Breakfast Burrito",
+        "price": "$6.50"
+      },
+      {
+        "name": "Burrito Grande",
+        "description": "Eggs, Potatoes, Sausage, Cheese, Gravy, Jalapenos, Onion, Black Olives",
+        "price": "$7.99"
+      }
+    ]
+  },
+  "breakfast-addons": {
+    "name": "Breakfast Add-Ons",
+    "items": [
+      {
+        "name": "Scrambled Eggs (2)",
+        "price": "$3.50"
+      },
+      {
+        "name": "Sausage Patty",
+        "price": "$1.39"
+      },
+      {
+        "name": "Bacon (2 Slices)",
+        "price": "$1.59"
+      },
+      {
+        "name": "Hashbrown",
+        "price": "$1.50"
+      },
+      {
+        "name": "Gravy",
+        "price": "$1.69"
+      },
+      {
+        "name": "Biscuit",
+        "price": "$1.29"
+      },
+      {
+        "name": "Salsa",
+        "price": "$0.79"
+      },
+      {
+        "name": "Sour Cream",
+        "price": "$0.79"
+      }
+    ]
+  }
+}
