@@ -24,5 +24,12 @@ import menu from '../assets/menu.json'
     margin: 0 auto;
     container-name: menu;
     container-type: inline-size;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    @media (min-width: 768px) {
+      display: block;
+    }
   }
 </style>

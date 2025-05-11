@@ -121,7 +121,7 @@ const { menu } = Astro.props
   .menu-group {
     border: 1px solid var(--primary-color);
     border-radius: var(--border-radius);
-    padding: 1rem 1rem;
+    padding: 0.5rem 1rem;
     font-family: 'Montserrat', sans-serif;
     width: calc(50cqw - 1rem);
     float: left;
@@ -200,7 +200,7 @@ const { menu } = Astro.props
     }
 
     @media (max-width: 900px) {
-      width: 100cqw;
+      width: calc(100cqw - 1rem);
       margin-right: 0;
       float: none;
 
@@ -210,7 +210,7 @@ const { menu } = Astro.props
       }
 
       &[data-full-width='true'] {
-        width: 100cqw;
+        width: calc(100cqw - 1rem);
 
         .menu-items-container {
           column-count: 1;
