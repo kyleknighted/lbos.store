@@ -3,6 +3,7 @@ interface Props {
   menu: {
     name: string
     description?: string
+    footer?: string[]
     column?: string
     items?: {
       name: string
@@ -104,18 +105,28 @@ const { menu } = Astro.props
       ))
     }
   </div>
+
+  {
+    menu.footer && (
+      <div class="menu-footer">
+        {menu.footer.map((footer) => (
+          <p>{footer}</p>
+        ))}
+      </div>
+    )
+  }
 </div>
 
 <style>
   .menu-group {
     border: 1px solid var(--primary-color);
     border-radius: var(--border-radius);
-    padding: 1rem;
+    padding: 1rem 1rem;
     font-family: 'Montserrat', sans-serif;
-    width: calc(50cqw - 0.25rem);
+    width: calc(50cqw - 1rem);
     float: left;
-    margin-bottom: 0.5rem;
-    margin-right: 0.25rem;
+    margin-bottom: 1.5rem;
+    margin-right: 1rem;
 
     h4 {
       text-align: center;
@@ -143,6 +154,7 @@ const { menu } = Astro.props
       li {
         display: flex;
         font-weight: bold;
+        gap: 0.5rem;
       }
     }
 
@@ -152,13 +164,14 @@ const { menu } = Astro.props
       gap: 0.5rem;
 
       .menu-items {
-        width: calc(50% - 0.25rem);
+        width: calc(50% - 1rem);
 
         li {
           display: flex;
           flex-direction: column;
           gap: 0.5rem;
           align-items: flex-start;
+          padding: 0;
 
           .options {
             font-size: 0.8rem;
@@ -167,17 +180,22 @@ const { menu } = Astro.props
       }
     }
 
+    .menu-items-container {
+      margin-top: 1rem;
+    }
+
     &[data-full-width='true'] {
       width: 100cqw;
 
       .menu-items-container {
         column-count: 2;
+        column-gap: 3rem;
       }
     }
 
     &[data-right-align='true'] {
       float: right;
-      margin-left: 0.25rem;
+      margin-left: 1rem;
       margin-right: 0;
     }
 
@@ -209,9 +227,19 @@ const { menu } = Astro.props
     li {
       display: flex;
       justify-content: space-between;
-      align-items: center;
+      align-items: flex-start;
       padding: 0.25rem 0;
       gap: 1rem;
+
+      &:last-child {
+        padding-bottom: 0;
+      }
+    }
+
+    .sizes {
+      li {
+        padding: 0;
+      }
     }
 
     .description {
@@ -255,6 +283,17 @@ const { menu } = Astro.props
       li {
         padding: 0;
       }
+    }
+  }
+
+  .menu-footer {
+    font-size: 0.8rem;
+    margin-top: 1.5rem;
+    font-style: italic;
+
+    p {
+      margin: 0;
+      padding: 0.15rem 0;
     }
   }
 </style>

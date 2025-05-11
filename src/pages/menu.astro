@@ -9,13 +9,6 @@ import menu from '../assets/menu.json'
 <Layout>
   <section id="products">
     <div class="container">
-      <h2>Menu</h2>
-      <h3>We have food</h3>
-
-      <div class="product-image">
-        <img src={productBetweenTheTrails.src} alt="Between the Trails" />
-      </div>
-
       <div class="menu">
         {Object.entries(menu).map(([key, value]) => <MenuGroup menu={value} />)}
       </div>
@@ -29,8 +22,6 @@ import menu from '../assets/menu.json'
   .menu {
     max-width: 900px;
     margin: 0 auto;
-    /* columns: 2 450px;
-    column-gap: 1rem; */
     container-name: menu;
     container-type: inline-size;
   }

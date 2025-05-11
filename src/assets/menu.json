@@ -65,6 +65,10 @@
     "name": "Burgers",
     "column": "right",
     "description": "All of our burgers are ¼ lbs Angus & come with Lettuce, Tomato, Pickles & Onion, unless otherwise noted.",
+    "footer": [
+      "Add Season or Crinkle Fries for an extra $1.50",
+      "Onion Rings, Pickle Fries, Wedges, Kegs or Fried Mushrooms for an extra $2.49"
+    ],
     "items": [
       {
         "name": "Hamburger",
@@ -86,18 +90,18 @@
       {
         "name": "Western Burger",
         "description": "Patty, Pepper Jack Cheese, Jalapeños, Onions, 2 Onion Rings, BBQ Sauce",
-        "price": "$16.75"
+        "price": "$10.99"
       },
       {
         "name": "Woodland Burger",
         "description": "1 Patty, American Cheese, Chili, Onion, Jalapeños",
-        "price": "$16.75"
+        "price": "$10.99"
       }
     ]
   },
   "sandwiches": {
     "name": "Sandwiches",
-    "column": "right",
+    "column": "left",
     "items": [
       {
         "name": "Cod (Fish) on Bun",
@@ -123,7 +127,7 @@
   },
   "wraps": {
     "name": "Wraps",
-    "column": "left",
+    "column": "right",
     "items": [
       {
         "name": "BLT Wrap",
