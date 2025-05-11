@@ -29,9 +29,12 @@ import Cabin from '../assets/cabin.png'
     min-width: var(--min-width);
     background-color: var(--light-color);
     box-shadow: var(--box-shadow);
-    height: 30cqw;
+    height: min(30cqw, 200px);
+    max-height: 200px;
     padding: 1cqh;
     padding-bottom: 2rem;
+    container-name: header;
+    container-type: inline-size;
 
     #logo {
       display: block;
@@ -73,14 +76,6 @@ import Cabin from '../assets/cabin.png'
         display: block;
         height: 100%;
         width: auto;
-      }
-    }
-
-    @container header (max-width: 768px) {
-      & {
-        .logo {
-          padding: 1cqh 0;
-        }
       }
     }
   }
