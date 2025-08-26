@@ -34,6 +34,7 @@
     "typescript-eslint": "^8.31.0"
   },
   "lint-staged": {
-    "**/*": "yarn format"
-  }
+    "**/*": "pnpm run format"
+  },
+  "packageManager": "pnpm@10.15.0"
 }
