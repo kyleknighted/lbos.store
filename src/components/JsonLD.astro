@@ -1,0 +1,76 @@
+---
+const homeJson = {
+  '@context': 'https://schema.org',
+  '@type': 'ConvenienceStore',
+  name: 'Lil Bit of Something',
+  url: 'https://lbos.store/',
+  telephone: '+1-573-468-9026',
+  address: {
+    '@type': 'PostalAddress',
+    streetAddress: '11891 Mine Rd',
+    addressLocality: 'Sullivan',
+    addressRegion: 'MO',
+    postalCode: '63080',
+    addressCountry: 'US',
+  },
+  openingHoursSpecification: [
+    {
+      '@type': 'OpeningHoursSpecification',
+      dayOfWeek: ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday'],
+      opens: '07:00',
+      closes: '21:00',
+    },
+    {
+      '@type': 'OpeningHoursSpecification',
+      dayOfWeek: ['Friday', 'Saturday'],
+      opens: '07:00',
+      closes: '22:00',
+    },
+  ],
+  department: {
+    '@type': 'FoodEstablishment',
+    name: 'LBOS Deli',
+    openingHoursSpecification: [
+      {
+        '@type': 'OpeningHoursSpecification',
+        dayOfWeek: ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday'],
+        opens: '07:00',
+        closes: '19:30',
+      },
+      {
+        '@type': 'OpeningHoursSpecification',
+        dayOfWeek: ['Friday', 'Saturday'],
+        opens: '07:00',
+        closes: '20:30',
+      },
+    ],
+  },
+  sameAs: ['https://www.facebook.com/ls4e1/'],
+}
+
+const steelBuildingJson = {
+  '@context': 'https://schema.org',
+  '@type': 'Product',
+  name: 'LBOS Steel Buildings',
+  image: 'https://lbos.store/images/steel-buildings/steel-building-exterior.jpg',
+  description:
+    'Durable and customizable steel buildings for various applications, including storage, workshops, and agricultural use. Contact us for a free quote.',
+  brand: {
+    '@type': 'Brand',
+    name: 'Lil Bit of Something American Steel Carports',
+  },
+  offers: {
+    '@type': 'Offer',
+    url: 'https://lbos.store/steel-buildings',
+    priceCurrency: 'USD',
+    availability: 'https://schema.org/InStock',
+  },
+}
+
+const isHome = Astro.url.pathname === '/'
+const isSteel = Astro.url.pathname === '/steel-buildings'
+---
+
+{isHome && <script type="application/ld+json" set:html={JSON.stringify(homeJson)} />}
+
+{isSteel && <script type="application/ld+json" set:html={JSON.stringify(steelBuildingJson)} />}
