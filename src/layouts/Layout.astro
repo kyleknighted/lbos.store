@@ -3,6 +3,8 @@ import BackToTopButton from '../components/BackToTopButton.astro'
 import Header from '../components/Header.astro'
 import DefaultStyles from '../components/DefaultStyles.astro'
 import Footer from '../components/Footer.astro'
+import JsonLD from '../components/JsonLD.astro'
+import Analytics from '../components/Analytics.astro'
 ---
 
 <!doctype html>
@@ -23,6 +25,7 @@ import Footer from '../components/Footer.astro'
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png" />
     <link rel="manifest" href="images/favicon/site.webmanifest" />
     <DefaultStyles />
+    <JsonLD />
   </head>
 
   <body>
@@ -30,5 +33,7 @@ import Footer from '../components/Footer.astro'
     <slot />
     <Footer />
     <BackToTopButton />
+
+    <Analytics />
   </body>
 </html>
