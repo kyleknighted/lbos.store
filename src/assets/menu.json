@@ -25,7 +25,7 @@
         ],
         "type": "multi-select",
         "description": "Pick any two",
-        "price": "$8.50"
+        "price": "$9.00"
       },
       {
         "name": "Nacho & Cheese",
@@ -37,7 +37,7 @@
       },
       {
         "name": "Pretzel (w/ Cheese)",
-        "price": "$3.50"
+        "price": "$3.75"
       },
       {
         "name": "Dirty Fries or Nachos",
@@ -66,8 +66,8 @@
     "column": "right",
     "description": "All of our burgers are ¼ lbs Angus & come with Lettuce, Tomato, Pickles & Onion, unless otherwise noted.",
     "footer": [
-      "Add Season or Crinkle Fries for an extra $1.50",
-      "Onion Rings, Pickle Fries, Wedges, Kegs or Fried Mushrooms for an extra $2.49"
+      "Add a Side for an extra $2.75",
+      "Season or Crinkle Fries, Onion Rings, Pickle Fries, Wedges, Kegs or Fried Mushrooms"
     ],
     "items": [
       {
@@ -130,13 +130,9 @@
     "column": "right",
     "items": [
       {
-        "name": "BLT Wrap",
-        "price": "$8.99"
-      },
-      {
         "name": "Chicken Bacon Ranch Wrap",
         "description": "Popcorn Chicken, Shredded cheese, Bacon Bits and Ranch Dressing. Optional, Lettuce, Tomato, Onions, Black Olives",
-        "price": "$9.50"
+        "price": "$9.99"
       }
     ]
   },
@@ -145,7 +141,7 @@
     "sizes": [
       {
         "name": "9\"",
-        "price": "$11.99"
+        "price": "$12.99"
       },
       {
         "name": "12\"",
@@ -153,10 +149,6 @@
       }
     ],
     "items": [
-      {
-        "name": "BBQ Pulled Pork",
-        "description": "Pulled Pork, BBQ Sauce and 6 Cheese Blend"
-      },
       {
         "name": "Buffalo Chicken",
         "description": "Chicken, Buffalo Sauce, and 6 Cheese Blend"
@@ -183,7 +175,7 @@
         "sizes": [
           {
             "name": "9\"",
-            "price": "$12.99"
+            "price": "$14.99"
           },
           {
             "name": "12\"",
@@ -197,7 +189,7 @@
         "sizes": [
           {
             "name": "9\"",
-            "price": "$13.99"
+            "price": "$15.99"
           },
           {
             "name": "12\"",
@@ -213,7 +205,7 @@
     "sizes": [
       {
         "name": "9\"",
-        "price": "$9.99"
+        "price": "$10.99"
       },
       {
         "name": "12\"",
@@ -224,7 +216,13 @@
     "options": [
       {
         "name": "Meats",
-        "items": ["Bacon Bits", "Sausage", "Pepperoni", "Canadian bacon", "Beef Crumbles"]
+        "items": [
+          "Bacon Bits",
+          "Sausage",
+          "Pepperoni",
+          "Canadian bacon",
+          "Beef Crumbles"
+        ]
       },
       {
         "name": "Veggies",
@@ -250,16 +248,16 @@
         "price": "$3.99"
       },
       {
-        "name": "12oz Cup",
-        "price": "$5.50"
+        "name": "Small Cup",
+        "price": "$5.75"
       },
       {
         "name": "Waffle Cone",
         "price": "$4.99"
       },
       {
-        "name": "16oz Cup",
-        "price": "$6.50"
+        "name": "Large Cup",
+        "price": "$6.75"
       },
       {
         "name": "Shakes 16oz",
@@ -277,7 +275,7 @@
     "items": [
       {
         "name": "Single Biscuit & Gravy",
-        "price": "$4.59"
+        "price": "$4.69"
       },
       {
         "name": "Double Biscuit & Gravy",
@@ -289,11 +287,11 @@
       },
       {
         "name": "Steak, Egg, & Cheese Burrito",
-        "price": "$8.99"
+        "price": "$9.99"
       },
       {
         "name": "Bacon, Egg, & Cheese Burrito",
-        "price": "$8.59"
+        "price": "$8.99"
       },
       {
         "name": "Egg & Cheese Burrito",
@@ -317,7 +315,7 @@
       },
       {
         "name": "Bacon, Egg, Cheese Biscuit",
-        "price": "$5.50"
+        "price": "$5.59"
       },
       {
         "name": "Egg & Cheese on Bun",
@@ -329,7 +327,7 @@
       },
       {
         "name": "Breakfast Burrito",
-        "price": "$6.50"
+        "price": "$6.99"
       },
       {
         "name": "Burrito Grande",
@@ -358,8 +356,8 @@
         "price": "$1.50"
       },
       {
-        "name": "Gravy",
-        "price": "$1.69"
+        "name": "Side of Gravy (bowl)",
+        "price": "$2.29"
       },
       {
         "name": "Biscuit",
